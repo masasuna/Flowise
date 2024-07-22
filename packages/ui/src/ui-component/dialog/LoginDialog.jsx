@@ -5,8 +5,7 @@ import PropTypes from 'prop-types'
 import { Dialog, DialogActions, DialogContent, Typography, DialogTitle } from '@mui/material'
 import { StyledButton } from '@/ui-component/button/StyledButton'
 import { Input } from '@/ui-component/input/Input'
-import logo from '@/assets/images/logo-dark.png';
-
+import logo from '@/assets/images/logo-dark.png'
 
 const LoginDialog = ({ show, dialogProps, onConfirm }) => {
     const portalElement = document.getElementById('portal')
@@ -38,7 +37,7 @@ const LoginDialog = ({ show, dialogProps, onConfirm }) => {
             aria-describedby='alert-dialog-description'
         >
             <DialogTitle sx={{ fontSize: '1rem' }} id='alert-dialog-title'>
-            <img src={logo} alt='Jaive Logo' style={{ width: '100px', height: 'auto', display: 'block', margin: '0 auto' }} />
+                <img src={logo} alt='Jaive Logo' style={{ width: '100px', height: 'auto', display: 'block', margin: '0 auto' }} />
                 {dialogProps.title}
             </DialogTitle>
             <DialogContent>
