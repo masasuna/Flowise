@@ -62,8 +62,16 @@ export const theme = (customization) => {
     }
 
     const themes = createTheme(themeOptions)
-    themes.components = componentStyleOverrides(themeOption)
-
+    themes.components = {
+        ...componentStyleOverrides(themeOption),
+        MuiBackdrop: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: 'rgba(0, 0, 0, 1)'
+                }
+            }
+        }
+    }
     return themes
 }
 
